@@ -1,0 +1,75 @@
+$lightBackground: #fffbf4;
+$link-colour: #b71540;
+$hover-link-colour: #4a69bd;
+
+.projects-page {
+  cursor: default;
+  padding: 1.5em;
+
+  .projects-title {
+    font-family: "Lora", serif;
+    font-weight: 600;
+    font-size: 26px;
+    color: #3c6382;
+    margin-bottom: 0;
+  }
+
+  .project-title {
+    font-family: "Hind Madurai", sans-serif;
+    font-weight: 600;
+    font-size: 50px;
+    margin-bottom: 0;
+    margin-top: 20px;
+  }
+
+  .project-hashtags {
+    margin: 0;
+    color: #e66551;
+    font-size: 24px;
+    font-weight: 800;
+    font-family: "Lora", serif;
+    letter-spacing: 0.045em;
+  }
+
+  .project-description {
+    font-size: 20px;
+    letter-spacing: 0.037em;
+    max-width: 1000px;
+  }
+
+  .project-links {
+    display: flex;
+    margin-bottom: 30px;
+
+    a {
+      margin: 0px 20px 0px 0px;
+      text-decoration: none;
+      color: inherit;
+      font-weight: 500;
+      font-size: 22px;
+      background-image: linear-gradient($lightBackground 50%, $link-colour 50%);
+      background-repeat: repeat-x;
+      background-position: right bottom -0.8px;
+      background-size: 25% 25%;
+      position: relative;
+
+      &:before {
+        content: "";
+        display: block;
+        width: 100%;
+        height: 4px;
+        background-color: $hover-link-colour;
+        position: absolute;
+        left: 0;
+        bottom: -0.5px;
+        transform-origin: left;
+        transform: scale(0);
+        transition: transform 0.2s linear;
+      }
+
+      &:hover:before {
+        transform: scale(1);
+      }
+    }
+  }
+}

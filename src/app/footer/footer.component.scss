@@ -1,0 +1,31 @@
+.footer {
+  cursor: default;
+  padding: 1.8em;
+
+  &:before {
+    content: "";
+    display: block;
+    width: 100px;
+    height: 3px;
+    background-color: #4a69bd;
+  }
+}
+
+.footer-title {
+  font-family: "Hind Madurai", sans-serif;
+  font-size: 24px;
+  font-weight: 600;
+}
+
+.footer-link {
+  font-family: "Hind Madurai", sans-serif;
+  font-size: 18px;
+  font-weight: 500;
+
+  a {
+    text-decoration: none;
+    color: inherit;
+    font-family: "Lora", serif;
+    font-weight: 500;
+  }
+}

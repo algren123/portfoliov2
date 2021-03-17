@@ -1,0 +1,40 @@
+.about-page {
+  cursor: default;
+  padding: 1em 1.5em;
+  max-width: 1000px;
+}
+
+.intro-title {
+  font-size: 64px;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 600;
+  margin: 20px 0;
+}
+
+.name-title {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 700;
+  font-size: 64px;
+  display: inline-block;
+}
+
+.intro-paragraph {
+  font-size: 24px;
+  font-weight: 300;
+  font-family: "Hind Madurai", sans-serif;
+}
+
+br {
+  margin: 2px 0;
+  content: " ";
+}
+
+.intro-header {
+  font-weight: 400;
+  font-family: "Lora", serif;
+}
+
+.intro-list__item {
+  font-family: "Hind Madurai", sans-serif;
+  font-size: 24px;
+}

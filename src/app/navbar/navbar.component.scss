@@ -1,0 +1,49 @@
+$lightBackground: #fffbf4;
+$link-colour: #b71540;
+$hover-link-colour: #4a69bd;
+
+.site-nav {
+  margin-top: 2em;
+  width: 100%;
+  left: 0;
+  bottom: 0;
+  position: static;
+  padding: 1em;
+  z-index: 1;
+  display: block;
+  justify-content: space-around;
+
+  a {
+    text-decoration: none;
+    background-image: linear-gradient($lightBackground 50%, $link-colour 50%);
+    background-repeat: repeat-x;
+    background-position: right bottom -0.8px;
+    background-size: 25% 25%;
+    color: inherit;
+    position: relative;
+
+    &:before {
+      content: "";
+      display: block;
+      width: 100%;
+      height: 4px;
+      background-color: $hover-link-colour;
+      position: absolute;
+      left: 0;
+      bottom: -0.5px;
+      transform-origin: left;
+      transform: scale(0);
+      transition: transform 0.2s linear;
+    }
+
+    &:hover:before {
+      transform: scale(1);
+    }
+  }
+}
+
+.site-nav__link {
+  margin: 0 0.65em;
+  font-weight: 500;
+  font-size: 1.1em;
+}

@@ -1,0 +1,16 @@
+<div class="projects-page">
+    <h2 class="projects-title">Some of my work</h2>
+
+    <br>
+    <div *ngFor="let project of projectList">
+        <h1 class="project-title">{{project.title}}</h1>
+        <h5 class="project-hashtags">{{project.hashtags}}</h5>
+        <p class="project-description">{{project.description}}</p>
+        <div class="project-links">
+            <a href={{project.gitHubLink}} target="_blank" class="github-link">GitHub Link</a>
+            <a href={{project.liveLink}} target="_blank" class="live-link">Live Link</a>
+        </div>
+        
+    </div>
+
+</div>
